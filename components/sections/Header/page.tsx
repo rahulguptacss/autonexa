@@ -12,7 +12,7 @@ import PrimaryButton from '../../ui/PrimaryButton';
 /** Desktop nav link — orange text + underline when active, supports one dropdown level */
 function DesktopNavItem({ item, active, isActive }: { item: NavItem; active: boolean; isActive: (href: string) => boolean }) {
   const hasChildren = Boolean(item.children && item.children.length > 0);
-  const linkClass = `group/nav relative inline-flex items-center gap-1 px-2.5 xl:px-3.5 py-2 font-heading text-[14px] xl:text-[14.5px] font-semibold transition-colors duration-200 ${
+  const linkClass = `group/nav relative inline-flex items-center gap-1 px-2 xl:px-3 py-2 font-heading text-[13.5px] xl:text-[14.5px] font-semibold transition-colors duration-200 ${
     active ? 'text-primary' : 'text-ink/80 hover:text-primary'
   }`;
 
@@ -20,10 +20,10 @@ function DesktopNavItem({ item, active, isActive }: { item: NavItem; active: boo
     <motion.span
       layoutId="nav-active-line"
       transition={{ type: 'spring', stiffness: 380, damping: 32 }}
-      className="absolute left-2.5 right-2.5 xl:left-3.5 xl:right-3.5 -bottom-0.5 h-[2px] bg-primary"
+      className="absolute left-2 right-2 xl:left-3 xl:right-3 -bottom-0.5 h-[2px] bg-primary"
     />
   ) : (
-    <span className="absolute left-2.5 right-2.5 xl:left-3.5 xl:right-3.5 -bottom-0.5 h-[2px] bg-primary scale-x-0 origin-left transition-transform duration-300 group-hover/nav:scale-x-100" />
+    <span className="absolute left-2 right-2 xl:left-3 xl:right-3 -bottom-0.5 h-[2px] bg-primary scale-x-0 origin-left transition-transform duration-300 group-hover/nav:scale-x-100" />
   );
 
   if (!hasChildren) {
@@ -128,21 +128,23 @@ export default function Header({ data }: HeaderProps) {
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
-      const sectionIds = ['about', 'capabilities', 'solutions', 'blog', 'contact'];
+      if (window.scrollY < 200) {
+        setActiveSection('#');
+        return;
+      }
+      const sectionIds = ['about', 'capabilities', 'solutions', 'quality', 'why-choose-us', 'clients', 'contact'];
       for (const id of sectionIds) {
         const el = document.getElementById(id);
         if (el) {
           const rect = el.getBoundingClientRect();
-          if (rect.top <= 220 && rect.bottom >= 180) {
+          if (rect.top <= 240 && rect.bottom >= 160) {
             setActiveSection(`#${id}`);
             return;
           }
         }
       }
-      if (window.scrollY < 200) {
-        setActiveSection('');
-      }
     };
+    handleScroll();
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -160,6 +162,7 @@ export default function Header({ data }: HeaderProps) {
   }, [isOpen]);
 
   const isActive = (href: string) => {
+    if (href === '#' || href === '/') return activeSection === '#' || activeSection === '';
     if (href.startsWith('#')) return href === activeSection;
     return href === '/' ? pathname === '/' : pathname.startsWith(href);
   };
