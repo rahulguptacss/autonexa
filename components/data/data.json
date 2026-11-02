@@ -1,0 +1,534 @@
+{
+  "common": {
+    "Header": {
+      "logo": "/logo/logo.webp",
+      "favicon": "/logo/favicon.webp",
+      "logo_text": "Autonexa",
+      "logo_subtext": "Industrial & Mobility Engineering",
+      "links": [
+        {
+          "name": "About",
+          "href": "#about"
+        },
+        {
+          "name": "Capabilities",
+          "href": "#capabilities"
+        },
+        {
+          "name": "Solutions",
+          "href": "#solutions"
+        },
+        {
+          "name": "Quality",
+          "href": "#quality"
+        },
+        {
+          "name": "Why Us",
+          "href": "#why-choose-us"
+        },
+        {
+          "name": "Partners",
+          "href": "#clients"
+        },
+        {
+          "name": "Contact",
+          "href": "#contact"
+        }
+      ],
+      "button_text": "Enquire Now",
+      "button_link": "#contact",
+      "menu_aria_label": "Open navigation menu",
+      "close_aria_label": "Close navigation menu"
+    },
+    "Footer": {
+      "logo": "/logo/logo-w.webp",
+      "logo_text": "Autonexa Automotive Solutions",
+      "menu_title": "Quick Links",
+      "menu_links": [
+        {
+          "name": "Home",
+          "href": "#"
+        },
+        {
+          "name": "About",
+          "href": "#about"
+        },
+        {
+          "name": "Capabilities",
+          "href": "#capabilities"
+        },
+        {
+          "name": "Solutions",
+          "href": "#solutions"
+        },
+        {
+          "name": "Quality",
+          "href": "#quality"
+        },
+        {
+          "name": "Why Us",
+          "href": "#why-choose-us"
+        },
+        {
+          "name": "Partners",
+          "href": "#clients"
+        },
+        {
+          "name": "Contact",
+          "href": "#contact"
+        }
+      ],
+      "connect_title": "Connect With Us",
+      "socials": [
+        {
+          "name": "LinkedIn",
+          "href": "https://linkedin.com",
+          "icon": "linkedin",
+          "aria_label": "Autonexa on LinkedIn"
+        },
+        {
+          "name": "YouTube",
+          "href": "https://youtube.com",
+          "icon": "youtube",
+          "aria_label": "Autonexa on YouTube"
+        },
+        {
+          "name": "X",
+          "href": "https://x.com",
+          "icon": "x",
+          "aria_label": "Autonexa on X"
+        },
+        {
+          "name": "Instagram",
+          "href": "https://instagram.com",
+          "icon": "instagram",
+          "aria_label": "Autonexa on Instagram"
+        }
+      ],
+      "copyright": "© 2026 CarGlow. All Rights Reserved. Powered by Lestow"
+    },
+    "BackToTop": {
+      "aria_label": "Back to top of page"
+    }
+  },
+  "categories": {
+    "Automotive": {
+      "templateComponents": {
+        "template-1": {
+          "pages": {
+            "home": {
+              "title": "Autonexa | Modern Industrial & Mobility Engineering",
+              "pageName": "Home",
+              "metadata": {
+                "title": "Autonexa | Modern Industrial & Mobility Engineering",
+                "description": "Autonexa leads next-generation automotive engineering, precision robotic manufacturing, EV battery architectures, and intelligent mobility solutions."
+              },
+              "components": [
+                {
+                  "key": "hero",
+                  "component": "Hero"
+                },
+                {
+                  "key": "about",
+                  "component": "About"
+                },
+                {
+                  "key": "projects",
+                  "component": "Projects"
+                },
+                {
+                  "key": "products_solutions",
+                  "component": "ProductsSolutions"
+                },
+                {
+                  "key": "quality",
+                  "component": "Quality"
+                },
+                {
+                  "key": "why_choose_us",
+                  "component": "WhyChooseUs"
+                },
+                {
+                  "key": "clients",
+                  "component": "Clients"
+                },
+                {
+                  "key": "contact",
+                  "component": "Contact"
+                }
+              ]
+            }
+          },
+          "sections": {
+            "hero": {
+              "eyebrow": "NEXT-GEN INDUSTRIAL MOBILITY",
+              "title_bold": "ENGINEERING",
+              "title_light": [
+                "THE FUTURE OF",
+                "SMART MOBILITY."
+              ],
+              "lead": "Precision manufacturing, electric powertrain innovation, and automated robotics systems architected for high-performance mobility.",
+              "description": "Precision manufacturing, electric powertrain innovation, and automated robotics systems architected for high-performance mobility.",
+              "image": "/hero/hero.webp",
+              "image_alt": "Autonexa electric vehicle chassis in modern robotic engineering facility",
+              "cta_text": "Explore Our Capabilities",
+              "cta_link": "#capabilities",
+              "scroll_text": "SCROLL TO EXPLORE"
+            },
+            "about": {
+              "eyebrow": "ABOUT AUTONEXA",
+              "title_bold": "DRIVING",
+              "title_light": [
+                "MODERN INDUSTRIAL",
+                "PRECISION."
+              ],
+              "lead": "Autonexa unites intelligent automation, advanced metallurgy, and zero-defect quality systems to engineer high-velocity mobility solutions.",
+              "description": "From lightweight carbon-composite structures to high-voltage EV battery integration, we partner with world-tier automotive OEMs to accelerate production timelines while elevating structural durability and aerodynamic efficiency.",
+              "button_text": "Learn About Our Process",
+              "button_link": "#capabilities",
+              "image": "/about/about-banner.webp",
+              "image_alt": "Autonexa automated automotive production line with synchronized robotic arms"
+            },
+            "projects": {
+              "eyebrow": "OUR WORK",
+              "title_bold": "REAL PROJECTS",
+              "title_light": [
+                "REAL PROGRESS"
+              ],
+              "description": "We work on advanced manufacturing projects that drive performance, efficiency and a more sustainable future for the mobility industry.",
+              "button_text": "Enquire on Capabilities",
+              "button_link": "#contact",
+              "homepage_count": 6,
+              "items": [
+                {
+                  "id": "automotive-structure-components",
+                  "title": "AUTOMOTIVE STRUCTURE COMPONENTS",
+                  "category": "BODY | CHASSIS | FRAME",
+                  "subtext": "BODY | CHASSIS | FRAME",
+                  "image": "/projects/1.webp",
+                  "alt": "Automotive structure components - robotic welding on vehicle chassis and body frame"
+                },
+                {
+                  "id": "powertrain-solutions",
+                  "title": "POWERTRAIN SOLUTIONS",
+                  "category": "TRANSMISSION | DRIVETRAIN",
+                  "subtext": "TRANSMISSION | DRIVETRAIN",
+                  "image": "/projects/2.webp",
+                  "alt": "Powertrain solutions - precision transmission and drivetrain components"
+                },
+                {
+                  "id": "safety-performance-components",
+                  "title": "SAFETY & PERFORMANCE COMPONENTS",
+                  "category": "BRAKING | SUSPENSION | CONTROL SYSTEMS",
+                  "subtext": "BRAKING | SUSPENSION | CONTROL SYSTEMS",
+                  "image": "/projects/3.webp",
+                  "alt": "Safety and performance components - high performance braking and suspension systems"
+                },
+                {
+                  "id": "precision-engineered-parts",
+                  "title": "PRECISION ENGINEERED PARTS",
+                  "category": "GEARS | SHAFTS | CUSTOM COMPONENTS",
+                  "subtext": "GEARS | SHAFTS | CUSTOM COMPONENTS",
+                  "image": "/projects/4.webp",
+                  "alt": "Precision engineered parts - heavy-duty gears, shafts and custom automotive components"
+                },
+                {
+                  "id": "high-speed-cnc-machining",
+                  "title": "HIGH-SPEED CNC MACHINING",
+                  "category": "MILLING | TURNING | RAPID TOOLING",
+                  "subtext": "MILLING | TURNING | RAPID TOOLING",
+                  "image": "/projects/5.webp",
+                  "alt": "High-speed CNC machining - 5-axis milling, turning and rapid tooling"
+                },
+                {
+                  "id": "ev-battery-pack-assembly",
+                  "title": "EV BATTERY PACK ASSEMBLY",
+                  "category": "MODULES | THERMAL MANAGEMENT | PACK HOUSING",
+                  "subtext": "MODULES | THERMAL MANAGEMENT | PACK HOUSING",
+                  "image": "/projects/6.webp",
+                  "alt": "EV battery pack assembly - robotic module handling, thermal management and pack housing"
+                }
+              ]
+            },
+            "products_solutions": {
+              "eyebrow": "PRODUCTS & SOLUTIONS",
+              "title_bold": "ENGINEERED",
+              "title_light": [
+                "FOR PEAK",
+                "PERFORMANCE."
+              ],
+              "description": "Proprietary modular architectures and lightweight systems engineered to meet the demanding requirements of next-generation commercial and electric fleets.",
+              "button_text": "Request Technical Specs",
+              "button_link": "#contact",
+              "homepage_count": 3,
+              "items": [
+                {
+                  "id": "electric-powertrain",
+                  "number": "01.",
+                  "step": "01.",
+                  "title": "Integrated Electric Powertrain",
+                  "description": "High-efficiency hairpin stator e-motor and inverter units delivering high power density with integrated liquid thermal management.",
+                  "image": "/solutions/1.webp",
+                  "alt": "High-performance integrated electric drive motor and silicon carbide inverter unit"
+                },
+                {
+                  "id": "composite-chassis",
+                  "number": "02.",
+                  "step": "02.",
+                  "title": "Lightweight Structural Chassis",
+                  "description": "Aerospace-grade carbon-fiber and CNC aluminum composite subframes engineered for maximum torsional rigidity and impact absorption.",
+                  "image": "/solutions/2.webp",
+                  "alt": "Lightweight carbon-fiber composite automotive chassis monocoque"
+                },
+                {
+                  "id": "smart-braking",
+                  "number": "03.",
+                  "step": "03.",
+                  "title": "Smart Brake-by-Wire Systems",
+                  "description": "Electro-hydraulic multi-piston braking assemblies with microsecond response times and intelligent regenerative braking synergy.",
+                  "image": "/solutions/3.webp",
+                  "alt": "Precision electro-hydraulic smart brake-by-wire caliper and ventilated carbon-ceramic rotor"
+                }
+              ]
+            },
+            "quality": {
+              "eyebrow": "QUALITY & INNOVATION",
+              "title": "Precision, Quality and Continuous Innovation",
+              "title_line_1": "Precision, Quality",
+              "title_line_2": "and Continuous Innovation",
+              "description": "Our stringent quality standards and innovation-driven approach ensure components that meet global automotive requirements.",
+              "checklist": [
+                "End-to-end Quality Assurance",
+                "Advanced Testing & Inspection",
+                "Continuous Process Improvement",
+                "R&D for Next-Gen Mobility"
+              ],
+              "image": "/quality/quality.webp",
+              "image_alt": "Precision automated optical CMM probe inspecting high-tolerance automotive spur gear"
+            },
+            "why_choose_us": {
+              "eyebrow": "WHY CHOOSE AUTONEXA",
+              "title": "A Trusted Partner in Automotive Manufacturing",
+              "title_line_1": "A Trusted Partner in",
+              "title_line_2": "Automotive Manufacturing",
+              "description": "We combine engineering expertise, advanced technology and a customer-first approach to deliver lasting value.",
+              "items": [
+                {
+                  "id": "proven-expertise",
+                  "icon": "award",
+                  "title": "Proven Expertise",
+                  "description": "Decades of industry experience"
+                },
+                {
+                  "id": "consistent-quality",
+                  "icon": "cog",
+                  "title": "Consistent Quality",
+                  "description": "Reliable and durable components"
+                },
+                {
+                  "id": "customer-focused",
+                  "icon": "users",
+                  "title": "Customer Focused",
+                  "description": "Tailored solutions and long-term support"
+                },
+                {
+                  "id": "sustainable-approach",
+                  "icon": "leaf",
+                  "title": "Sustainable Approach",
+                  "description": "Efficiency, responsibility and a greener tomorrow"
+                }
+              ]
+            },
+            "contact": {
+              "eyebrow": "GET IN TOUCH",
+              "title_bold": "LET'S BUILD",
+              "title_light": [
+                "THE FUTURE",
+                "TOGETHER."
+              ],
+              "description": "Partner with Autonexa for state-of-the-art mobility engineering and industrial manufacturing.",
+              "image": "/contact/engineers.webp",
+              "image_alt": "Autonexa senior automotive engineers collaborating in smart robotics manufacturing facility",
+              "help_badge": {
+                "label": "HAVE A QUESTION?",
+                "phone": "+100000000000",
+                "phone_href": "tel:+100000000000"
+              },
+              "form": {
+                "eyebrow": "CONNECT WITH US",
+                "title_black": "Request a",
+                "title_orange": "Consultation",
+                "title": "Request a Consultation",
+                "subtitle": "Submit your project parameters and our senior engineering team will respond with a tailored feasibility assessment within 24 hours.",
+                "name_placeholder": "Your Name *",
+                "company_placeholder": "Company / Enterprise Name",
+                "email_placeholder": "Corporate Email *",
+                "phone_placeholder": "Direct Phone Number *",
+                "interest_placeholder": "Engineering Solution of Interest",
+                "interest_options": [
+                  "Automated Robotic Cells",
+                  "Precision 5-Axis CNC Machining",
+                  "EV Battery & Powertrain Integration",
+                  "Lightweight Composite Chassis",
+                  "Smart Brake-by-Wire Actuators",
+                  "Custom Contract Manufacturing"
+                ],
+                "message_placeholder": "Project Scope & Technical Requirements *",
+                "submit_text": "Submit Enquiry →",
+                "submitting_text": "Submitting...",
+                "success_message": "Thank you! Your enquiry has been received. An Autonexa technical specialist will contact you shortly."
+              },
+              "info_cards": [
+                {
+                  "id": "address",
+                  "icon": "map-pin",
+                  "label": "OUR HEADQUARTERS",
+                  "title": "OUR HEADQUARTERS",
+                  "lines": [
+                    "123 Education Lane,",
+                    "New York, NY 10001"
+                  ]
+                },
+                {
+                  "id": "phone",
+                  "icon": "phone",
+                  "label": "DIRECT INQUIRIES",
+                  "title": "DIRECT INQUIRIES",
+                  "lines": [
+                    "+100000000000"
+                  ],
+                  "href": "tel:+100000000000"
+                },
+                {
+                  "id": "email",
+                  "icon": "mail",
+                  "label": "TECHNICAL SUPPORT",
+                  "title": "TECHNICAL SUPPORT",
+                  "lines": [
+                    "info@xyz.com"
+                  ],
+                  "href": "mailto:info@xyz.com"
+                }
+              ]
+            },
+            "clients": {
+              "eyebrow": "OUR CLIENTS & PARTNERS",
+              "title_bold": "TRUSTED BY LEADING",
+              "title_light": [
+                "AUTOMOTIVE BRANDS"
+              ],
+              "description": "Collaborating with global automotive OEMs and Tier-1 mobility pioneers to manufacture precision structural, powertrain, and EV sub-assemblies at enterprise scale.",
+              "badge_text": "GLOBAL OEM NETWORK",
+              "items": [
+                {
+                  "id": "audi",
+                  "name": "Audi",
+                  "logo": "/brand/audi.png",
+                  "category": "Luxury Performance"
+                },
+                {
+                  "id": "bmw",
+                  "name": "BMW",
+                  "logo": "/brand/bmw.png",
+                  "category": "Chassis & Powertrain"
+                },
+                {
+                  "id": "mercedes-benz",
+                  "name": "Mercedes-Benz",
+                  "logo": "/brand/mercedes-benz.png",
+                  "category": "Electric & Luxury"
+                },
+                {
+                  "id": "porsche",
+                  "name": "Porsche",
+                  "logo": "/brand/porsche.png",
+                  "category": "Motorsport Dynamics"
+                },
+                {
+                  "id": "land-rover",
+                  "name": "Land Rover",
+                  "logo": "/brand/land-rover.png",
+                  "category": "All-Terrain Systems"
+                },
+                {
+                  "id": "volvo",
+                  "name": "Volvo",
+                  "logo": "/brand/volvo.png",
+                  "category": "Safety Architectures"
+                },
+                {
+                  "id": "toyota",
+                  "name": "Toyota",
+                  "logo": "/brand/toyota.png",
+                  "category": "Global Hybrid Scale"
+                },
+                {
+                  "id": "honda",
+                  "name": "Honda",
+                  "logo": "/brand/honda.png",
+                  "category": "Precision Valvetrain"
+                },
+                {
+                  "id": "hyundai",
+                  "name": "Hyundai",
+                  "logo": "/brand/hyundai.png",
+                  "category": "Next-Gen EV Modules"
+                },
+                {
+                  "id": "ford",
+                  "name": "Ford",
+                  "logo": "/brand/ford.png",
+                  "category": "Truck & EV Subframes"
+                },
+                {
+                  "id": "volkswagen",
+                  "name": "Volkswagen",
+                  "logo": "/brand/volkswagen.png",
+                  "category": "Modular Platforms"
+                },
+                {
+                  "id": "lexus",
+                  "name": "Lexus",
+                  "logo": "/brand/lexus.png",
+                  "category": "Hybrid Engineering"
+                }
+              ],
+              "highlights": [
+                {
+                  "title": "Tier-1 OEM Approved",
+                  "description": "Engineered to strict OEM quality tolerances and multi-year program lifecycle requirements."
+                },
+                {
+                  "title": "Sub-Micron Precision",
+                  "description": "Validated with 100% automated optical CMM inspection protocols for zero-defect compliance."
+                },
+                {
+                  "title": "24+ Countries Supplied",
+                  "description": "Direct just-in-time delivery to high-volume vehicle assembly facilities globally."
+                }
+              ],
+              "stats": [
+                {
+                  "value": "24+",
+                  "label": "Global Automotive Brands"
+                },
+                {
+                  "value": "120+",
+                  "label": "Active Vehicle Programs"
+                },
+                {
+                  "value": "99.98%",
+                  "label": "Zero-Defect Quality Rate"
+                },
+                {
+                  "value": "IATF 16949",
+                  "label": "Certified Production"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

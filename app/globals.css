@@ -1,0 +1,198 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #111111;
+  --color-primary: #123B8A;
+  --color-primary-dark: #0d2a63;
+  --color-ink: #111111;
+  --color-dark: #0e0e0f;
+  --color-soft: #f5f5f6;
+  --color-muted: #6b6e73;
+  --color-line: #e7e7e9;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--color-primary);
+  --color-primary-dark: var(--color-primary-dark);
+  --color-ink: var(--color-ink);
+  --color-dark: var(--color-dark);
+  --color-soft: var(--color-soft);
+  --color-muted: var(--color-muted);
+  --color-line: var(--color-line);
+  --font-heading: var(--font-heading-family), 'Segoe UI', sans-serif;
+  --font-sans: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: clip;
+}
+
+a,
+button,
+[type="button"],
+[type="submit"] {
+  cursor: pointer;
+}
+
+/* Shine sweep used on primary buttons */
+.btn-shine {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+.btn-shine::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(110deg, transparent 30%, rgba(255, 255, 255, 0.3) 50%, transparent 70%);
+  transform: translateX(-120%);
+  transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.btn-shine:hover::after {
+  transform: translateX(120%);
+}
+
+/* Site-wide button styles (sharp rectangle + uppercase label + arrow) */
+@layer components {
+  .btn-primary,
+  .btn-dark,
+  .btn-outline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    border-radius: 2px;
+    padding: 0.95rem 1.6rem;
+    font-family: var(--font-heading);
+    font-size: 0.82rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition:
+      transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+      box-shadow 0.3s ease,
+      background-color 0.3s ease,
+      color 0.3s ease,
+      border-color 0.3s ease;
+  }
+
+  .btn-primary {
+    color: #ffffff;
+    background-color: var(--color-primary);
+    box-shadow: 0 12px 26px -14px rgba(18, 59, 138, 0.65);
+  }
+  .btn-primary:hover {
+    background-color: var(--color-primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 18px 32px -14px rgba(18, 59, 138, 0.75);
+  }
+
+  .btn-dark {
+    color: #ffffff;
+    background-color: var(--color-ink);
+  }
+  .btn-dark:hover {
+    background-color: var(--color-primary);
+    transform: translateY(-2px);
+  }
+
+  .btn-outline {
+    color: var(--color-ink);
+    border: 1px solid rgba(17, 17, 17, 0.2);
+    background: transparent;
+  }
+  .btn-outline .btn-arrow {
+    color: var(--color-primary);
+  }
+  .btn-outline:hover {
+    color: #ffffff;
+    border-color: var(--color-primary);
+    background: var(--color-primary);
+    transform: translateY(-2px);
+  }
+  .btn-outline:hover .btn-arrow {
+    color: #ffffff;
+  }
+
+  .btn-primary:active,
+  .btn-dark:active,
+  .btn-outline:active {
+    transform: translateY(0);
+  }
+
+  .btn-arrow {
+    width: 1.05rem;
+    height: 1.05rem;
+    stroke-width: 2;
+    transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .btn-primary:hover .btn-arrow,
+  .btn-dark:hover .btn-arrow,
+  .btn-outline:hover .btn-arrow {
+    transform: translateX(4px);
+  }
+}
+
+/* Hide native scrollbar on horizontal sliders */
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Continuous smooth marquee animations */
+@keyframes marquee-left {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0%); }
+}
+
+.animate-marquee-left {
+  display: flex;
+  width: max-content;
+  animation: marquee-left 38s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee-right {
+  display: flex;
+  width: max-content;
+  animation: marquee-right 38s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee-left:hover,
+.animate-marquee-right:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
